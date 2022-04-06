@@ -1,0 +1,76 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*Scorecard*/
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+.scoreCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    border: solid #dfdfdf;
+    border-width: 1px 0;
+}
+
+.scoreCard .item {
+    text-align: center;
+    color: #7c7c7c;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px;
+}
+
+.scoreCard p {
+    margin: 5px 0;
+}
+
+.scoreCard .item .value {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.scoreCard .item img {
+    height: 20px;
+}
+
+.scoreCard .item .unit {
+    font-size: 11px;
+}
+
+div#infoBox {
+    position: absolute;
+    top: .2em;
+    width: 94%;
+    height: auto;
+    padding: 2.4em;
+    text-align: center;
+    background: #9cc765f0;
+    border-radius: 12px;
+}
+
+div#infoBox a {
+    color:white;
+}
+
+div#infoBox .closeButton {
+    color:white;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    font-size: 12px;
+}
+
+.infoButton {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    background: #e2e2e2;
+    padding: 4px 11px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}

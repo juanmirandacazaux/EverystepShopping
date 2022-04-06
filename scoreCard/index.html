@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Everystep Shopping - Scorecard</title>
+  <link rel="icon" type="image/png" href="img/leaf.png" />
+</head>
+<body>
+
+<div class="scoreCard">
+          <div class="item">
+            <img src="img/waterSaved.svg">
+            <p class="value">20L</p>
+            <p class="unit">Water saved</p>
+          </div>
+          <div class="item">
+            <img src="img/CO2saved.svg">
+            <p class="value">5Kg</p>
+            <p class="unit">CO2 saved</p>
+          </div>
+          <div class="item">
+            <img src="img/energySaved.svg">
+            <p class="value">1Wh</p>
+            <p class="unit">Energy saved</p>
+          </div>   
+          <div class="item">
+            <img src="img/wasteSaved.svg">
+            <p class="value">500g</p>
+            <p class="unit">Waste saved</p>
+          </div>    
+          <div class="item">
+            <img src="img/ecoPackaging.svg">
+            <p class="value">YES</p>
+            <p class="unit">Eco-packaging</p>
+          </div>
+          <div class="item">
+            <img src="img/sustainableShipping.svg">
+            <p class="value">YES</p>
+            <p class="unit">Sustainable Shipping</p>
+          </div> 
+          <div class="item">
+            <img src="img/lifecycleAnalysis.svg">
+            <p class="value">MEDIAN</p>
+            <p class="unit">Lifecycle Analysis Method</p>
+          </div> 
+          <div onclick="showInfo()" class="infoButton">i</div>
+          <div style="display: none;" id="infoBox">
+            <p class="closeButton" onclick="hideInfo()">X</p>
+            <a href="">Learn more about our sustainable practices</a></div>
+        </div>
+
+<script>
+function showInfo(){
+document.getElementById("infoBox").setAttribute("style", "display:block;");
+};
+function hideInfo(){
+document.getElementById("infoBox").setAttribute("style", "display:none;");
+};
+</script> 
+</body>
+</html>
